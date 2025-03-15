@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import ElementPlus from 'element-plus';
 import { createApp } from 'vue';
 import App from './App.vue';
 import Home from './components/Home.vue';
@@ -13,5 +14,5 @@ const router = createRouter({
 });
 
 const app = createApp(App);
-app.use(router);
+app.use(ElementPlus);
 app.mount('#app');

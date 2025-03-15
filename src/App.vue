@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar.vue';
 import NavBar from './components/NavBar.vue'
 import Home from './components/Home.vue'
 import Footer from './components/Footer.vue'
+import { ElButton } from 'element-plus';
 
 </script>
 
@@ -11,6 +12,7 @@ import Footer from './components/Footer.vue'
 <Home />
 <Footer />
 <Sidebar/>
+<el-button type="primary">主要按钮</el-button>
 </template>
 
 
