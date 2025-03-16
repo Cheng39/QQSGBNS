@@ -1,18 +1,14 @@
 <template>
-  <footer class="footer">
-    <p>版权所有 &copy; 2025 QQSGBNS</p>
-    <!-- 这是版权声明 -->
-  </footer>
+  <!-- 底部版权信息 -->
+  <div>版权所有 © 2025 QQSGBNS</div>
 </template>
-
+<script setup>
+// 空脚本，因为目前只显示静态内容
+</script>
 <style scoped>
-.footer {
-  background-color: #333;
-  color: white;
+/* 样式可选，保持与 App.vue 一致 */
+div {
   text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  color: #fff;
 }
 </style>
