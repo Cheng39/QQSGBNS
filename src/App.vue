@@ -16,14 +16,5 @@ import { ElButton } from 'element-plus';
 
 
 <style scoped>
-h1 {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-p {
-  filter: drop-shadow(0 0 2em #646cffaa);
-  color: blueviolet;
-}
+
 </style>

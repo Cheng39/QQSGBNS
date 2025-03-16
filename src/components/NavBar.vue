@@ -9,13 +9,13 @@
 
 <style scoped>
 .navbar {
-  font-size: 50px;
-  /*background-color: #333;*/
+  font-size: 30px;
+  background-color: #5a5959;
   padding: 1rem;
   text-align: center;
 }
 .navbar a {
-  color: rgb(252, 5, 5);
+  color: rgb(241, 226, 226);
   text-decoration: none;
   margin: 0 1rem;
 }

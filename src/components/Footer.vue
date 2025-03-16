@@ -1,6 +1,7 @@
 <template>
   <footer class="footer">
     <p>版权所有 &copy; 2025 QQSGBNS</p>
+    <!-- 这是版权声明 -->
   </footer>
 </template>
 
