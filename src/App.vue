@@ -1,12 +1,13 @@
 <script setup>
 import NavBar from './components/NavBar.vue'
 import Footer from './components/Footer.vue'
+import Layout from './components/Layout.vue'
+
 import { useRouter } from 'vue-router'
 import { ref } from 'vue'
 
 const router = useRouter()
 const activeTab = ref('home')
-
 const handleTabClick = (tab) => {
   const tabRoutes = {
     home: '/',
@@ -19,46 +20,7 @@ const handleTabClick = (tab) => {
 </script>
 
 <template>
-  <el-container style="height: 100vh;">
-    <!-- 左侧导航栏 -->
-    <el-aside width="200px">
-      <el-menu :default-active="$route.path" router>
-        <el-menu-item index="/">首页</el-menu-item>
-        <el-menu-item index="/calculator">计算</el-menu-item>
-        <el-menu-item index="/gallery">图片</el-menu-item>
-        <el-menu-item index="/summary">汇总</el-menu-item>
-      </el-menu>
-    </el-aside>
-
-    <el-container>
-      <!-- 顶部导航/选项卡 -->
-      <el-header style="padding: 0;">
-        <el-tabs v-model="activeTab" @tab-click="handleTabClick">
-          <el-tab-pane label="首页" name="home" />
-          <el-tab-pane label="计算" name="calculator" />
-          <el-tab-pane label="图片" name="gallery" />
-          <el-tab-pane label="汇总" name="summary" />
-        </el-tabs>
-      </el-header>
-
-      <!-- 主内容区域 -->
-      <el-main style="padding: 20px; overflow: auto;">
-        <router-view />
-      </el-main>
-
-      <!-- 底部 -->
-      <el-footer style="height: 60px; line-height: 60px; padding: 0;">
-        <Footer />
-      </el-footer>
-    </el-container>
-
-    <!-- 右侧导航栏 -->
-    <el-aside width="200px">
-      <el-menu>
-        <el-menu-item>快捷链接</el-menu-item>
-      </el-menu>
-    </el-aside>
-  </el-container>
+   <Layout :active-tab="activeTab" @tab-click="handleTabClick" /><!-- 使用 Layout 组件，传递 activeTab 和 tab-click 事件 -->
 </template>
 
 <style scoped>
