@@ -13,8 +13,6 @@
 </template>
 
 <script setup>
-import { useRoute } from 'vue-router' // <!-- 导入 useRoute，用于获取当前路由路径 -->
-const route = useRoute() //<!-- 获取当前路由实例，用于高亮当前菜单项 -->
 </script>
 
 <style scoped>
