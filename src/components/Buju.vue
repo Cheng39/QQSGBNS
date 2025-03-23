@@ -1,5 +1,5 @@
 <template>
-  <el-container style="height: 200vh;"> <!-- 主容器，设置高度为视口高度 -->
+  <el-container style="height: 100vh;"> <!-- 主容器，设置高度为视口高度 -->
     <Zuodaohang /> <!-- 左侧导航栏，使用 Sidebar 组件 -->
     <el-container> <!-- 中间内容区域，包含头部和主内容 -->
       <el-header> <!-- 顶部头部区域 -->
@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-  import Zuodaohang from './Zuodaohang.vue'
+  import Zuodaohang from './ZuoDaoHang.vue'
   import { ref } from 'vue' // 导入 ref，用于定义响应式变量
   import { useRouter } from 'vue-router' // 导入 useRouter，用于获取路由实例
 

@@ -1,9 +1,7 @@
 <script setup>
 
-import Banquantishi from "./components/Banquantishi.vue"; // 导入 Banquantishi 组件，用于显示版权提示
-import Buju from "./components/Buju.vue"; // 导入 Layout 组件，用于页面布局
-
-
+import Banquantishi from "./components/BanQuanTiShi.vue"; // 导入 Banquantishi 组件，用于显示版权提示
+import Buju from "./components/BuJu.vue"; // 导入 Layout 组件，用于页面布局
 
 </script>
 
@@ -18,7 +16,7 @@ import Buju from "./components/Buju.vue"; // 导入 Layout 组件，用于页面
 
 <style scoped>
 .el-main {
-  background-color: #fff; /* 确保背景填充，设置为白色 */
+  background-color: #532d2d; /* 确保背景填充，设置为白色 */
 }
 .el-footer {
   background-color: #2c3e50; /* 设置页脚背景颜色，与现有背景色匹配 */
