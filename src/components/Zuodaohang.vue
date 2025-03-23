@@ -18,7 +18,10 @@
       <el-menu-item index="/F13">F13军团</el-menu-item> 
       <el-menu-item index="/F14">F14日常</el-menu-item> 
       <el-menu-item index="/F15">F15活动</el-menu-item> 
-      <el-menu-item index="/F15">F16更新</el-menu-item> 
+      <el-menu-item index="/F16">F16更新</el-menu-item> 
+      <el-menu-item index="/F17">F17家园</el-menu-item> 
+        <!-- <div><el-button type=""></el-button></div> -->
+    <!-- <el-button type=""></el-button> -->
     </el-menu>
   </el-aside>
 

@@ -23,6 +23,13 @@
     <p>打造类</p>
     <el-button type="">打造玉计算</el-button>
     <el-button type="">打造材料计算</el-button>
+
+    <p>镶嵌类</p>
+    <el-button type="">武器</el-button>
+    <el-button type="">装备</el-button>
+    <el-button type="">首饰</el-button>
+    <el-button type="">符咒</el-button>
+    <el-button type="">翅膀</el-button>
     
 
 </template>
