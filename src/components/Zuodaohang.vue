@@ -1,7 +1,8 @@
 <template>
  
-  <el-aside width="100px"> <!-- 左侧导航栏，宽度固定为 180px -->
-    <el-menu :default-active="$route.path" router> <!-- 菜单组件，绑定当前路由路径并支持路由跳转 -->
+  <el-aside width="15%"  > <!-- 左侧导航栏，宽度固定为 180px -->
+    <el-menu :default-active="$route.path" router
+    > <!-- 菜单组件，绑定当前路由路径并支持路由跳转 -->
       <el-menu-item index="/">首页</el-menu-item> <!-- 菜单项，点击跳转到首页路由 -->
       <el-menu-item index="/F1">F1属性</el-menu-item> <!-- 菜单项，点击跳转到图片页面路由 -->
       <el-menu-item index="/F2">F2物品</el-menu-item> <!-- 菜单项，点击跳转到计算页面路由 -->
@@ -20,8 +21,7 @@
       <el-menu-item index="/F15">F15活动</el-menu-item> 
       <el-menu-item index="/F16">F16更新</el-menu-item> 
       <el-menu-item index="/F17">F17家园</el-menu-item> 
-        <!-- <div><el-button type=""></el-button></div> -->
-    <!-- <el-button type=""></el-button> -->
+   
     </el-menu>
   </el-aside>
 
@@ -31,6 +31,10 @@
 </script>
 
 <style scoped>
-.el-aside { background-color: #f5f7fa; height: 100%; }  /* <!-- 左侧导航栏样式，设置背景色和高度填充 -->*/
-.el-menu { background-color: #f5f7fa; height: 100%; }/* <!-- 菜单样式，设置背景色和高度填充 -->*/
+
+.el-menu-item{
+
+  background-color: #3478ff; /* 设置菜单背景颜色 */
+  color: #fff; /* 设置菜单文字颜色 */
+}
 </style>

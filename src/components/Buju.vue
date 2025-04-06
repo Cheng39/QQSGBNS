@@ -1,13 +1,13 @@
 <template>
   <el-container style="height: 100vh;"> <!-- 主容器，设置高度为视口高度 -->
-    <Zuodaohang /> <!-- 左侧导航栏，使用 Sidebar 组件 -->
+    <ZuoDaoHang />
+
     <el-container> <!-- 中间内容区域，包含头部和主内容 -->
       <el-header> <!-- 顶部头部区域 -->
         <el-main>
-        <router-view />
-      </el-main> <!-- 主内容区域，动态渲染路由对应的视图 -->
+          <router-view />
+        </el-main> <!-- 主内容区域，动态渲染路由对应的视图 -->
       </el-header>
-      
     </el-container>
 
     <el-aside width="50px"> <!-- 右侧导航栏，宽度固定为 200px -->
@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-  import Zuodaohang from './ZuoDaoHang.vue'
+  import ZuoDaoHang from './ZuoDaoHang.vue' // 导入左侧导航栏组件
   import { ref } from 'vue' // 导入 ref，用于定义响应式变量
   import { useRouter } from 'vue-router' // 导入 useRouter，用于获取路由实例
 

@@ -3,13 +3,14 @@
 import Banquantishi from "./components/BanQuanTiShi.vue"; // 导入 Banquantishi 组件，用于显示版权提示
 import Buju from "./components/BuJu.vue"; // 导入 Layout 组件，用于页面布局
 
+
 </script>
 
 <template>
   <Buju>
     <router-view />
   </Buju>
-  
+ 
   <Banquantishi />
   
 </template>

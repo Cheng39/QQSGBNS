@@ -1,8 +1,10 @@
 <template>
+  <div class="template">
+    
     <h2>F1属性</h2>
     
       <p>计算表</p>
-      <el-button type="">经验</el-button>
+      <el-button @click="gotoJingYan" type="">经验</el-button>
       <el-button type="">称号</el-button>
       <el-button type="">恶行</el-button>
       <el-button type="">声望</el-button>
@@ -12,8 +14,6 @@
       <el-button type="">抗性</el-button>
       
    
-
-   
       <p>咨询类</p>
       <el-button type="WuLi">武力</el-button>
       <el-button type="ZhiLi">智力</el-button>
@@ -22,7 +22,7 @@
       <el-button type="">体质</el-button>
       <el-button type="">灵活</el-button>
       <el-button type="">命中</el-button>
-
+  
       <p>抗性表</p>
       <el-button type="KangXingBiao">抗性表</el-button>
       <el-button type="">抗性丸</el-button>
@@ -31,17 +31,6 @@
       <el-button type="">禁卫</el-button>
       <el-button type="">仙法</el-button>
 
-
-   
-  
-  
-
-    
-
-      
-
-
-    <div>
       <p>按钮测试</p>
       <p>primary：主要按钮，通常用于最重要的操作，例如“提交”或“保存”。它通常具有醒目的颜色，例如蓝色。</p>
       <el-button type="primary">primary</el-button>
@@ -57,13 +46,29 @@
       <el-button type="text">text</el-button>
       
 
-    </div>
+    </div> 
+   
 
-    <!-- <div><el-button type=""></el-button></div> -->
-    <!-- <el-button type=""></el-button> -->
   
 
    
   </template>
-   <script>
+   <script setup>
+
+   import { useRouter } from 'vue-router';
+   const router = useRouter();
+    const gotoJingYan = () => {
+      router.push('/F1经验');//这个是最上方的路径显示名称可以使用中文
+      
+    }
   </script>
+<style>
+  .template {
+  
+  max-height: calc(100vh - 60px - 50px - 20px); /* 请替换为你实际的页眉、页脚高度和留白 */
+  overflow-y: auto;
+  padding: 10px; /* 可选：添加一些内边距 */
+}
+  
+</style>
+  

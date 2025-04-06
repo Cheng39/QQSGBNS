@@ -7,10 +7,11 @@
 </script>
 <style scoped>/* 样式可选，保持与 App.vue 一致 */
 div{
-    position: fixed;
+    position: static;
     bottom: 0;
     width: 100%;
     text-align: center;
+    background-color: chocolate;
   }
 
 
