@@ -12,6 +12,11 @@ import F9 from '../views/F9.vue'
 import F10 from '../views/F10.vue'
 import F11 from '../views/F11.vue'
 import F12 from '../views/F12.vue'
+import F13 from '../views/F13.vue'
+import F14 from '../views/F14.vue'
+import F15 from '../views/F15.vue'
+import F16 from '../views/F16.vue'
+import F17 from '../views/F17.vue'
 
 
 
@@ -29,7 +34,11 @@ const routes = [
   { path: '/F10', component: F10 },
   { path: '/F11', component: F11 },
   { path: '/F12', component: F12 },
-
+  { path: '/F13', component: F13 },
+  { path: '/F14', component: F14 },
+  { path: '/F15', component: F15 },
+  { path: '/F16', component: F16 },
+  { path: '/F17', component: F17 },
 ]
 
 const router = createRouter({
