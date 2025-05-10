@@ -1,4 +1,6 @@
 <template>
+
+  <div class="button-group-flex">
     <h2>F5副本</h2>
 
     <p>副本</p>
@@ -25,7 +27,7 @@
     <el-button type="">野外BOSS技能表</el-button>
     <el-button type="">野外减伤表</el-button>
 
-
+</div>
 
 
   </template>

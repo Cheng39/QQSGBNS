@@ -1,5 +1,5 @@
 <template>
-  <div class="template">
+  <div class="button-group-flex">
     
     <h2>F1属性</h2>
     
@@ -31,7 +31,7 @@
       <el-button type="">禁卫</el-button>
       <el-button type="">仙法</el-button>
 
-      <p>按钮测试</p>
+      <!--<p>按钮测试</p>
       <p>primary：主要按钮，通常用于最重要的操作，例如“提交”或“保存”。它通常具有醒目的颜色，例如蓝色。</p>
       <el-button type="primary">primary</el-button>
       <p>success：成功按钮，表示操作已成功完成，例如“确认”或“完成”。它通常具有绿色。</p>
@@ -44,7 +44,7 @@
       <el-button type="info">info</el-button>
       <p>text：文本按钮，没有背景或边框，通常用于不重要的操作，例如“查看详情”或“了解更多”。它通常只有文本。</p>
       <el-button type="text">text</el-button>
-      
+      -->
 
     </div> 
    
@@ -57,18 +57,9 @@
 
    import { useRouter } from 'vue-router';
    const router = useRouter();
-    const gotoJingYan = () => {
+   const gotoJingYan = () => {
       router.push('/F1经验');//这个是最上方的路径显示名称可以使用中文
-      
     }
   </script>
-<style>
-  .template {
-  
-  max-height: calc(100vh - 60px - 50px - 20px); /* 请替换为你实际的页眉、页脚高度和留白 */
-  overflow-y: auto;
-  padding: 10px; /* 可选：添加一些内边距 */
-}
-  
-</style>
+
   

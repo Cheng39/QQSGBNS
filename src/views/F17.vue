@@ -1,4 +1,5 @@
 <template>
+  <div class="button-group-flex">
     <h2>F17家园</h2>
     
     <p>家园数据表</p>
@@ -13,6 +14,7 @@
     <el-button type="">家具种植表</el-button>
     <el-button type="">家具室内表</el-button>
     <el-button type="">家具室外表</el-button>
+    </div>
   </template>
    <script>
   </script>

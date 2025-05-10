@@ -1,4 +1,6 @@
 <template>
+
+  <div class="button-group-flex">
     <h2>F2物品</h2>
     <p>图表类</p>
     <el-button type="">装备图表</el-button>
@@ -30,7 +32,7 @@
     <el-button type="">首饰</el-button>
     <el-button type="">符咒</el-button>
     <el-button type="">翅膀</el-button>
-    
+    </div>
 
 </template>
 

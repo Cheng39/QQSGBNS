@@ -1,4 +1,6 @@
 <template>
+
+  <div class="button-group-flex">
     <h2>F6子女</h2>
     <p>子女主动技能</p>
     <el-button type="">剑侍</el-button>
@@ -41,7 +43,7 @@
 
     <p>子女技能合成</p>
     <el-button type="">技能合成</el-button>
-
+</div>
   </template>
    <script>
   </script>

@@ -1,4 +1,5 @@
 <template>
+  <div class="button-group-flex">
   <h2>F4状态</h2>
   
     <p>师徒</p>
@@ -17,7 +18,7 @@
     <el-button type="">夫妻亲密度</el-button>
     <el-button type="">夫妻属性表</el-button>
     <el-button type="">夫妻计算表</el-button>
-  
+  </div>
 
   </template>
 

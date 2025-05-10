@@ -1,4 +1,5 @@
 <template>
+  <div class="button-group-flex">
     <h2>F3技能</h2>
     <p>物理</p>
     <el-button type="">剑侍</el-button>
@@ -25,7 +26,7 @@
     <el-button type="">助战灵珠</el-button>
     <el-button type="">天书修炼</el-button>
     <el-button type="">灵珠图鉴</el-button>
-
+</div>
   </template>
    <script>
   </script>

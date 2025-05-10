@@ -1,4 +1,5 @@
 <template>
+  <div class="button-group-flex">
     <h2>F14日常</h2>
     <p>日常攻略</p>
     <el-button type="">活跃任务表</el-button>
@@ -12,7 +13,7 @@
     <el-button type="">河伯技能表</el-button>
     <el-button type="">河伯奖励表</el-button>
     
-
+</div>
 
   </template>
    <script>

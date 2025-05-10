@@ -1,4 +1,5 @@
 <template>
+  <div class="button-group-flex">
     <h2>F15更新</h2>
     <p>官方年度更新</p>
     
@@ -33,7 +34,7 @@
     <el-button type="">元旦回馈</el-button>
     <el-button type="">情人节回馈</el-button>
    
-
+</div>
 
 
 

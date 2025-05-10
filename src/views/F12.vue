@@ -1,4 +1,5 @@
 <template>
+  <div class="button-group-flex">
     <h2>F12合成</h2>
     <p>副职</p>
     <el-button type="">庖丁</el-button>
@@ -22,7 +23,7 @@
     <el-button type="">商行活力消耗表</el-button>
     <el-button type="">商行价钱表</el-button>
     <el-button type="">商行收入记录表</el-button>
-
+</div>
   
 
   </template>

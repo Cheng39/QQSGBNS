@@ -1,4 +1,5 @@
 <template>
+  <div class="button-group-flex">
     <h2>F10元神</h2>
  
     <p>元神图鉴</p>
@@ -16,7 +17,7 @@
     <el-button type="">元神升阶</el-button>
     <el-button type="">元神转移</el-button>
     <el-button type="">元神融合</el-button>
-    
+    </div>
 
   </template>
    <script>

@@ -1,4 +1,5 @@
 <template>
+  <div class="button-group-flex">
     <h2>F9灵兽</h2>
 
     <p>灵兽</p>
@@ -16,7 +17,7 @@
     <el-button type="">八阵图成本计算</el-button>
 
 
-
+</div>
 
 
 

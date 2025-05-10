@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'//Vue Router 库的 HTML5 History 模式 (HTML5 History Mode)。
 import Shouye from '../views/ShouYe.vue'
 import F1 from '../views/F1.vue'
 import F2 from '../views/F2.vue'
@@ -42,7 +42,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(),//Vue Router 库的 HTML5 History 模式 (HTML5 History Mode)。
   routes
 })
 
