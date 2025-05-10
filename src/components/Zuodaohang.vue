@@ -1,3 +1,17 @@
+<script setup>
+import { ref, computed, defineProps } from 'vue'; // 【新增】导入 computed 和 defineProps
+// 【新增】如果菜单项图片是本地导入的，需要导入
+// import F1Logo from './public/img/F1.jpg';
+
+// 【新增】定义组件接收的 props
+const props = defineProps({
+  searchQuery: { // 接收搜索查询字符串
+    type: String,
+    default: ''
+  }
+});
+</script>
+
 <template>
  
   <el-aside width="180px"  > <!-- 左侧导航栏，宽度固定为 180px -->
@@ -30,8 +44,7 @@
 
 </template>
 
-<script setup>
-</script>
+
 
 <style scoped>
 

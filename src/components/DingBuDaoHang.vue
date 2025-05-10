@@ -1,4 +1,22 @@
 <script setup>
+import { ref, watch, defineEmits } from 'vue'; // 【新增】导入 ref, watch, defineEmits
+// 【新增】导入 Element Plus 的图标组件，如果搜索框有图标
+// import { Search } from '@element-plus/icons-vue';
+
+// 【新增】定义可以触发的事件
+const emits = defineEmits(['update:search-query']); // 定义一个名为 update:search-query 的事件
+
+// 【新增】创建一个响应式变量来存储搜索框的输入值
+const searchQuery = ref('');
+
+// 【新增】监听 searchQuery 的变化，并在变化时触发事件
+watch(searchQuery, (newValue) => {
+  emits('update:search-query', newValue); // 当 searchQuery 变化时，触发事件并传递新值
+});
+
+// 【移除】如果您之前有 isSidebarVisible 和 onToggleClick 的 props 定义，现在不需要了
+// import { defineProps } from 'vue';
+// const props = defineProps({ isSidebarVisible: Boolean, onToggleClick: Function });
 
 </script>
 
@@ -61,6 +79,11 @@
     
 }
 
+/* 【新增】为搜索框添加样式 */
+.global-search-input {
+  width: 150px; /* 示例宽度 */
+  margin-right: 20px; /* 右侧间距 */
+}
 
 
 
