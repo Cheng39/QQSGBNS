@@ -1,6 +1,6 @@
 <template>
  
-  <el-aside width="200px"  > <!-- 左侧导航栏，宽度固定为 180px -->
+  <el-aside width="180px"  > <!-- 左侧导航栏，宽度固定为 180px -->
     <el-menu :default-active="$route.path" router
     > <!-- 菜单组件，绑定当前路由路径并支持路由跳转 -->
       <el-menu-item index="/">首页</el-menu-item> <!-- 菜单项，点击跳转到首页路由 -->
@@ -56,7 +56,7 @@
    /* === 添加这里的样式来加黑色边框 === */
   
   border-radius: 15px;
-  border: 1px solid #000; /* 另一种写黑色 */
+  border: 1px solid #3a3a3a; /* 另一种写黑色 */
 
   /* === 可选：如果边框紧贴着文字，可以增加内边距 === */
   padding: 3 22px; /* 示例：上下内边距为 0，左右内边距为 15px */

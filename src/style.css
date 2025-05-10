@@ -138,6 +138,44 @@ button:focus-visible {
   }
 }
 
+@media (max-width: 768px) { /* 当屏幕宽度小于等于 768px 时应用以下样式 */
+  .header-content {
+    /* 在小屏幕下可能需要让内容垂直居中 */
+    /* align-items: center; */
+    /* 让搜索栏和按钮组垂直堆叠，并各自占据全部宽度 */
+    flex-direction: column; /* 强制垂直排列 */
+    align-items: stretch; /* 让子项拉伸填充容器宽度 */
+
+    /* 调整垂直排列时的间距 */
+    padding: 10px; /* 调整内边距 */
+    /* gap: 10px; /* 或者使用 gap 在垂直方向上创建间隙 */
+  }
+
+  .header-content .el-input {
+    /* 在小屏幕下让搜索栏占据全部宽度 */
+    width: 100%;
+    margin-right: 0; /* 移除右侧间距 */
+    margin-bottom: 10px; /* 在搜索栏下方添加间距 */
+  }
+
+  .header-buttons {
+    /* 在小屏幕下让按钮组占据全部宽度 */
+    width: 100%;
+    display: flex; /* 按钮组内部继续使用 Flexbox 排列按钮 */
+    flex-wrap: wrap; /* 确保按钮组内部的按钮也可以换行 */
+    justify-content: center; /* 按钮组内部的按钮在水平方向上居中 */
+  }
+
+  .header-buttons .el-button {
+    margin-left: 0; /* 移除按钮之间的左侧间距 */
+    margin: 5px; /* 给按钮之间添加四周外边距 */
+  }
+ 
+
+ 
+
+}
+
 
 /* ======================================== */
 /* 您需要的按钮组 Flexbox 布局样式           */
@@ -165,12 +203,20 @@ button:focus-visible {
    /* Flex 项目属性 */
    flex-direction: row;
   justify-content: flex-start;
-   flex-shrink: 0; /* 默认不允许缩小 */
+   /*flex-shrink: 0;  默认不允许缩小 */
   flex-basis: auto; /* 默认基础大小由内容决定 */
-   margin: 5px; /* 如果不使用 gap，可以用 margin 来设置间距 */
+ 
 
    /* 如果需要覆盖全局 button 的其他样式，可以在这里写 */
    /* 例如，按钮的背景色，边框等 */
    background-color: #f0f0f0; 
    border: 1px solid #ccc
+  
+}
+.el-header {
+  padding: 0 0px ; /* 示例：移除默认内边距 */
+  /* background-color: #e9eef3; /* 示例：添加背景色（如果不想在 Header 组件内部加） */
+
+  /* 您可能还需要在这里设置 el-header 的高度，或者在 buju.vue 中通过 height 属性设置 */
+  height: 60px; 
 }
