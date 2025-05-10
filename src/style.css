@@ -220,3 +220,6 @@ button:focus-visible {
   /* 您可能还需要在这里设置 el-header 的高度，或者在 buju.vue 中通过 height 属性设置 */
   height: 60px; 
 }
+.el-footer {
+  --el-footer-padding:0 0px;
+}

@@ -1,22 +1,4 @@
 <script setup>
-import { ref, watch, defineEmits } from 'vue'; // 【新增】导入 ref, watch, defineEmits
-// 【新增】导入 Element Plus 的图标组件，如果搜索框有图标
-// import { Search } from '@element-plus/icons-vue';
-
-// 【新增】定义可以触发的事件
-const emits = defineEmits(['update:search-query']); // 定义一个名为 update:search-query 的事件
-
-// 【新增】创建一个响应式变量来存储搜索框的输入值
-const searchQuery = ref('');
-
-// 【新增】监听 searchQuery 的变化，并在变化时触发事件
-watch(searchQuery, (newValue) => {
-  emits('update:search-query', newValue); // 当 searchQuery 变化时，触发事件并传递新值
-});
-
-// 【移除】如果您之前有 isSidebarVisible 和 onToggleClick 的 props 定义，现在不需要了
-// import { defineProps } from 'vue';
-// const props = defineProps({ isSidebarVisible: Boolean, onToggleClick: Function });
 
 </script>
 
@@ -24,9 +6,9 @@ watch(searchQuery, (newValue) => {
   <div class="app-header"> 
     <div class="header-content">
        
-      <el-input
+   <el-input
         placeholder="全局搜索"
-        style="width: 150px; margin-right: 20px;"
+        class="global-search-input"
         prefix-icon="el-icon-search"
       ></el-input>
 
@@ -65,23 +47,23 @@ watch(searchQuery, (newValue) => {
     
   display: flex; /* 启用 Flexbox */
   align-items: center; /* 垂直居中子项 */
-  justify-content: flex-start; /* 子项分散对齐 */
+  justify-content:space-evenly; /* 子项分散对齐 */
   height: 100%; /* 让 Flex 容器占满 Header 组件的高度 */
   
 }
 
 .header-buttons .el-button {
     
-    margin-left: 10px; /* 给按钮之间添加左侧间距 */
+    margin-left: 3px; /* 给按钮之间添加左侧间距 */
 }
 .header-content .el-input {
-    margin-right: 10px; /* 示例：在搜索栏右侧添加 10px 间距 */
+    margin-right: 5px; /* 示例：在搜索栏右侧添加 10px 间距 */
     
 }
 
 /* 【新增】为搜索框添加样式 */
 .global-search-input {
-  width: 150px; /* 示例宽度 */
+  width: 120px; /* 示例宽度 */
   margin-right: 20px; /* 右侧间距 */
 }
 
