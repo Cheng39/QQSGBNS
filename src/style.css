@@ -1,80 +1,176 @@
+/* style.css - 全局样式文件 */
+
+/* ============================== */
+/* 全局变量和基础设置 (:root)      */
+/* ============================== */
+/* :root 选择器代表文档的根元素（即 <html>），
+   常用于定义 CSS 变量（也叫自定义属性）
+   和一些全局的基础样式，如字体、颜色模式等。*/
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* 字体设置 */
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; /* 定义全局字体栈 */
+  line-height: 1.5; /* 定义全局行高 */
+  font-weight: 400; /* 定义全局字体粗细 */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* 颜色模式和颜色 */
+  color-scheme: light dark; /* 允许浏览器根据用户系统偏好应用亮色或暗色模式 */
+  color: rgba(255, 255, 255, 0.87); /* 默认文本颜色（浅色模式下） */
+  background-color: #242424; /* 默认背景颜色（浅色模式下） */
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* 字体渲染优化 */
+  font-synthesis: none; /* 禁用字体合成 */
+  text-rendering: optimizeLegibility; /* 优化文本的可读性 */
+  -webkit-font-smoothing: antialiased; /* 针对 WebKit/Blink 内核浏览器开启抗锯齿 */
+  -moz-osx-font-smoothing: grayscale; /* 针对 Firefox 开启灰度抗锯齿 */
 }
 
+/* ============================== */
+/* 链接样式 (a)                   */
+/* ============================== */
+/* 定义全局链接的样式 */
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  font-weight: 500; /* 链接文本粗细 */
+  color: #646cff; /* 链接颜色 */
+  text-decoration: inherit; /* 链接下划线样式，inherit表示继承父元素 */
 }
+
+/* 定义链接悬停时的样式 */
 a:hover {
-  color: #535bf2;
+  color: #535bf2; /* 悬停时颜色变深 */
 }
+
+/* ============================== */
+/* body 样式                      */
+/* ============================== */
+/* 定义整个 body 的基础样式和布局 */
 
 body {
-  margin: 0;
-  padding: 0; 
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  margin: 0; /* 移除默认外边距 */
+  padding: 0; /* 移除默认内边距 */
+  /* 以下 Flexbox 样式可能是用于整个页面内容居中，具体作用取决于 #app 的父容器 */
+  
+  /* 同时在主轴和交叉轴上居中 Flex 项目 */
+  min-width: 320px; /* 设置最小宽度 */
+  min-height: 100vh; /* 设置最小高度为视口高度 */
+  display: block;
 }
 
+/* ============================== */
+/* 标题样式 (h1)                  */
+/* ============================== */
+/* 定义 h1 标签的样式 */
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 3.2em; /* 字体大小 */
+  line-height: 1.1; /* 行高 */
 }
+h2, p {
+  text-align: left; /* 确保 h2 和 p 靠左对齐 */
+}
+
+/* ============================== */
+/* 全局按钮样式 (button)          */
+/* ============================== */
+/* 定义所有 button 元素的基础样式 */
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+  border-radius: 8px; /* 圆角 */
+  border: 1px solid transparent; /* 边框，透明 */
+  padding: 0.6em 1.2em; /* 内边距 */
+  font-size: 1em; /* 字体大小 */
+  font-weight: 500; /* 字体粗细 */
+  font-family: inherit; /* 字体继承父元素 */
+  background-color: #1a1a1a; /* 背景颜色 */
+  cursor: pointer; /* 鼠标悬停时显示手型 */
+  transition: border-color 0.25s; /* 边框颜色变化时的过渡效果 */
 }
+
+/* 定义按钮悬停时的样式 */
 button:hover {
-  border-color: #646cff;
+  border-color: #646cff; /* 悬停时边框颜色变化 */
 }
+
+/* 定义按钮获得焦点时的样式 */
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 4px auto -webkit-focus-ring-color; /* 焦点时的轮廓 */
 }
+
+/* ============================== */
+/* card 类样式 (.card)            */
+/* ============================== */
+/* 定义 card 类的样式，可能用于卡片式布局 */
 
 .card {
-  padding: 2em;
+  padding: 2em; /* 内边距 */
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+/* ============================== */
+/* app ID 样式 (#app)             */
+/* ============================== */
+/* 定义 ID 为 app 的元素的样式，通常是 Vue 应用的挂载点 */
 
+/*
+.left-sidebar {
+  /* 在 Grid 布局中，这个元素会自动进入第一列 */
+  /* 可以设置背景色、内边距、最小宽度等 */
+  /* min-width: 200px; /* 您可以在这里设置最小宽度，但 grid-template-columns 已经定义了基础宽度 */
+  /*background-color: #f0f0f0; 
+  padding: 10px; 
+   overflow-y: auto;  如果导航内容多，允许垂直滚动 */
+
+
+
+/* ============================== */
+/* 亮色模式媒体查询 (@media)      */
+/* ============================== */
+/* 当用户系统偏好为亮色模式时应用的样式 */
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #213547; /* 亮色模式文本颜色 */
+    background-color: #ffffff; /* 亮色模式背景颜色 */
   }
   a:hover {
-    color: #747bff;
+    color: #747bff; /* 亮色模式链接悬停颜色 */
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* 亮色模式按钮背景颜色 */
   }
+}
+
+
+/* ======================================== */
+/* 您需要的按钮组 Flexbox 布局样式           */
+/* ======================================== */
+/* 这个类应用于包裹一组需要 Flexbox 布局的按钮的容器 */
+.button-group-flex {
+  display: flex; /* 启用 Flexbox 布局 */
+  flex-wrap: wrap; /* 允许 Flex 项目（按钮）在空间不足时换行 */
+  gap: 10px; /* 设置 Flex 项目之间的间隙（水平和垂直） */
+  flex-direction: row;
+  justify-content: flex-start;
+
+
+  /* 您可以根据需要添加其他 Flex 容器属性，例如对齐方式： */
+  /* justify-content: center; /* 项目在主轴上居中 */
+  /* align-items: center; /* 项目在交叉轴上居中 */
+}
+
+/* ======================================== */
+/* 按钮组内部的 Element Plus 按钮样式       */
+/* ======================================== */
+/* 这个选择器针对 class 为 button-group-flex 的元素内部的 .el-button 元素 */
+/* 这里可以覆盖全局 button 样式，或添加 Flex 项目特有的属性 */
+.button-group-flex .el-button {
+   /* Flex 项目属性 */
+   flex-direction: row;
+  justify-content: flex-start;
+   flex-shrink: 0; /* 默认不允许缩小 */
+  flex-basis: auto; /* 默认基础大小由内容决定 */
+   margin: 5px; /* 如果不使用 gap，可以用 margin 来设置间距 */
+
+   /* 如果需要覆盖全局 button 的其他样式，可以在这里写 */
+   /* 例如，按钮的背景色，边框等 */
+   background-color: #f0f0f0; 
+   border: 1px solid #ccc
 }

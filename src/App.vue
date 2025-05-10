@@ -1,27 +1,37 @@
 <script setup>
 
-import Banquantishi from "./components/BanQuanTiShi.vue"; // 导入 Banquantishi 组件，用于显示版权提示
 import Buju from "./components/BuJu.vue"; // 导入 Layout 组件，用于页面布局
+
+
 
 
 </script>
 
 <template>
   <Buju>
-    <router-view />
-  </Buju>
- 
-  <Banquantishi />
-  
-</template>
+    </Buju>
+
+  </template>
 
 <style scoped>
+/* 这里的样式应该主要控制 App.vue 自身的布局或全局影响的样式 */
+/* 例如，移除 body 或 #app 的全局居中样式 */
+
+/* 如果 .el-main 和 .el-footer 的样式只影响 buju 内部的布局，
+   建议将它们移到 buju.vue 的 <style scoped> 中 */
+
 .el-main {
-  background-color: #532d2d; /* 确保背景填充，设置为白色 */
+  /* background-color: #532d2d; */
+  text-align: left;
+  padding: 20px;
+  overflow-y: auto;
 }
+
 .el-footer {
-  background-color: #2c3e50; /* 设置页脚背景颜色，与现有背景色匹配 */
-  color: #fff; /* 设置页脚文字颜色为白色 */
-  text-align: center; /* 设置页脚文字居中对齐 */
+  /* background-color: #2c3e50; */
+  /* color: #fff; */
+  text-align: center;
+  padding: 10px;
 }
+
 </style>
