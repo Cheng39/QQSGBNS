@@ -7,7 +7,7 @@ import Banquantishi from "./Banquantishi.vue";
 <template>
   <el-container style="height: 100vh">
       <!-- el-aside 控制左导航宽度 -->
-      <el-aside width="150px">
+      <el-aside width="160px">
        <ZuoDaoHang /> 
       </el-aside>
         <!-- el-container控制中右侧的信息，比如按钮和显示页面以及底部版权 -->
